@@ -1,0 +1,1 @@
+(()=>{const o=document.getElementById("game-canvas");o.width=500,o.height=500,console.log("Webpack is working!"),console.log("Webpack TEST!"),console.log("Webpack is working!"),console.log("Webpack TEST!"),console.log("Webpack is working!"),console.log("Webpack TEST!")})();
