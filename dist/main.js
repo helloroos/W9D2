@@ -15,7 +15,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const MovingObject = __webpack_require__(/*! ./moving_object.js */ \"./src/moving_object.js\");\n// window.MovingObject = MovingObject;\n\ncanvas: document.addEventListener(\"DOMContentLoaded\", () => {\n    const canvas = document.getElementById(\"game-canvas\");\n    canvas.width = 500;\n    canvas.height = 500;\n\n    const ctx = canvas.getContext(\"2D\");\n\n    const mo = new MovingObject({\n        pos: [30, 30],\n        vel: [10, 10],\n        radius: 5,\n        color: \"#00FF00\"\n    });\n\n    mo.draw(ctx);\n\n});\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const MovingObject = __webpack_require__(/*! ./moving_object.js */ \"./src/moving_object.js\");\nwindow.MovingObject = MovingObject;\n\n\ncanvas: document.addEventListener(\"DOMContentLoaded\", () => {\n    const canvas = document.getElementById(\"game-canvas\");\n    canvas.width = 500;\n    canvas.height = 500;\n\n    const ctx = canvas.getContext(\"2d\");\n    window.ctx = ctx;\n\n    const mo = new MovingObject({\n        pos: [30, 30],\n        vel: [10, 10],\n        radius: 5,\n        color: \"#00FF00\"\n    });\n\n    mo.draw(ctx);\n    // debugger\n    // ctx.beginPath();\n    // ctx.arc(30, 30, 5, 0, 2 * Math.PI, true);\n    // ctx.strokeStyle=\"black\"\n    // ctx.lineWidth = 1;\n    // ctx.fillStyle = \"#00FF00\";\n    // ctx.fill();\n    // ctx.stroke();\n\n});\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
